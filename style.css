@@ -1,0 +1,87 @@
+/* style.css */
+
+/* 1. Make the page look like a centered document */
+body {
+    font-family: Arial, sans-serif; /* Easy to read font */
+    background-color: #f4f4f4; /* Light grey background for the screen */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything */
+}
+
+/* 2. Create a white container for the content */
+/* This effectively wraps your content even without a <div> in your HTML */
+html {
+    background: #f4f4f4;
+}
+
+body > * {
+    width: 100%;
+    max-width: 800px; /* Prevents text from stretching too wide */
+    background: white;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+/* 3. Header Styling */
+h1 {
+    background-color: #2c3e50; /* Dark Blue */
+    color: white;
+    padding: 20px;
+    margin-top: 0;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+/* 4. Navigation Menu Styling */
+nav {
+    background-color: #34495e; /* Slightly lighter blue */
+    padding: 15px;
+    text-align: center;
+    color: white; /* Makes the "|" lines white */
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #f1c40f; /* Yellow when you hover over a link */
+    text-decoration: underline;
+}
+
+/* 5. Text Styling */
+p, ul {
+    font-size: 18px;
+    line-height: 1.6; /* Adds space between lines */
+    color: #333;
+    padding: 0 20px;
+}
+
+/* 6. Gallery Table Styling */
+table {
+    width: 95%;
+    margin: 0 auto; /* Centers the table */
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
